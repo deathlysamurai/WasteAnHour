@@ -1,0 +1,25 @@
+.game-list-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-list-item {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.game-list-item:active, .game-list-item:hover {
+    box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
