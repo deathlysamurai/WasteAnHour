@@ -1,0 +1,55 @@
+.ttt-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board {
+    width: clamp(300px, 40vw, 600px);
+    height: clamp(300px, 40vw, 600px);
+    display: flex;
+    flex-direction: column;
+}
+
+.ttt-row {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.ttt-cell {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+.ttt-cell:hover {
+    cursor: pointer;
+}
+
+.ttt-cell:not(.ttt-cell:last-child) {
+    border-right: solid 3px black;
+}
+
+.ttt-row:not(.ttt-row:last-child) {
+    border-bottom: solid 3px black;
+}
+
+.opacity-lower {
+    opacity: .5;
+}
+
+.player {
+    font-size: 3em;
+    margin: 50px;
+}
+
+.footer {
+    flex-grow: 1;
+}
